@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg"
+    >
+
+
+    //Logo
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="0.8"
+            android:text="L O G O"
+            android:textColor="#FFFFFF"
+            android:textSize="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        >
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            >
+
+            <EditText
+                android:id="@+id/EditRegisterPhone"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+
+
+                android:layout_gravity="center_horizontal"
+                android:alpha="0.8"
+                android:drawableLeft="@drawable/phone"
+                android:hint="手机号" />
+
+            <Button
+                android:layout_width="90dp"
+                android:layout_height="60dp"
+
+                android:alpha="0.8"
+                android:background="#00cc99"
+                android:text="获取验证码"
+                android:textColor="#FFFFFF"
+
+                />
+
+        </LinearLayout>
+            <EditText
+                android:id="@+id/EditPassword"
+                android:layout_width="240dp"
+                android:layout_height="60dp"
+
+                android:layout_gravity="center_horizontal"
+                android:alpha="0.8"
+                android:drawableLeft="@drawable/password"
+
+                android:hint="密码"
+
+                />
+
+            //性别单选框
+            <RadioGroup
+                android:layout_width="240dp"
+                android:layout_height="40dp"
+                android:id="@+id/sex_rg"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal">
+                <RadioButton
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:text="男"
+                    android:id="@+id/male_rb"
+                    android:alpha="0.8"/>
+
+                <RadioButton
+                    android:id="@+id/famale_rb"
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+                    android:text="女"
+                    android:alpha="0.8"/>
+            </RadioGroup>
+
+            //兴趣多选框
+
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:text="选择您感兴趣的内容:"
+                    android:textSize="17dp"
+                    android:alpha="0.8"
+                    />
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+                <CheckBox
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+
+                    android:text="用眼时长"
+                    android:alpha="0.8"
+                    />
+                <CheckBox
+                    android:layout_width="120dp"
+                    android:layout_height="40dp"
+
+
+                    android:text="阅读距离"
+                    android:alpha="0.8"
+                    />
+
+
+            </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <CheckBox
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+
+
+                android:text="用眼光强"
+                android:alpha="0.8"
+                />
+            <CheckBox
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+
+
+                android:text="护眼知识"
+                android:alpha="0.8"
+                />
+
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="240dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_gravity="center_horizontal"
+                android:background="#00cc99"
+                android:text="注 册"
+                android:textColor="#FFFFFF"
+                android:textSize="20dp"
+                />
+
+
+        <!--</android.support.v7.widget.CardView>-->
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
